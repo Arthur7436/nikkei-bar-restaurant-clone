@@ -1,2 +1,12 @@
 
 
+#connect {
+    display: inline-flex;
+    float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    section > div {
+      display: none;
+    }
+  }
