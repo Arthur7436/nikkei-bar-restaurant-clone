@@ -10,3 +10,7 @@
       display: none;
     }
   }
+
+#introduction {
+    background-image: url(japanese-restaurants-la-01.webp);
+}
