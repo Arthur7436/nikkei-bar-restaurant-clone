@@ -69,12 +69,17 @@ table {
   }
 
 nav {
-  margin-top: 10%;
   background-color: rgb(0,0,0,0.5) ;
+  color: white;
+}
+
+div > ul > li > a {
+  color:white !important;
 }
 
 #rsvp {
   background-color: rgb(0,0,0,0.5);
+  color: white;
 }
 
 #dine {
