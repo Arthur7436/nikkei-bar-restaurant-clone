@@ -80,6 +80,15 @@ div > ul > li > a {
 #rsvp {
   background-color: rgb(0,0,0,0.5);
   color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+#bowl {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
 }
 
 #dine {
