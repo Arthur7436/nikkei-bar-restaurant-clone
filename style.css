@@ -119,6 +119,19 @@ div > ul > li > a {
     
 }
 
+#image {
+  background-color: var(--bs-navbar-bg);
+  color: var(--bs-navbar-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#image i {
+justify-content: space-between !important;
+}
+
 /* "Dine in" text with white border around to welcome customers. This is placed in middle of background img */
 #dine {
   display: flex;
