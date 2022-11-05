@@ -51,9 +51,16 @@ table {
 
 /* Root variables in cases where I need to adjust all elements at the same time. Removed and replaced elements that were not conneceted to this section by using var() instead  */
 
+@import url();
+@import url();
+
 :root {
   --bs-navbar-bg: rgb(0,0,0,0.5);
   --bs-navbar-text: white;
+}
+
+body {
+  font-family: ;
 }
 
 /* Reservation section (very top of page) */
