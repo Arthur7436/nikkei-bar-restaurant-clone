@@ -50,7 +50,7 @@ table {
 }
 
 
-/* Reservation section */
+/* Reservation section (very top of page) */
 
 /* Japanese restaurant as image behind navbar and #dine-section. Image to be zoomed out in order to make image more appealing to viewers */
 #introduction {
@@ -66,18 +66,18 @@ table {
   color: white;
 }
 
-/* span class within #dinner to have space between each other to look more appealing. I could not somehower use justify-content to apply 'space-around/between' and instead resolved to adjust the margins instead */
+/* Span class within #dinner to have space between each other to look more appealing. I could not somehow use justify-content to apply 'space-around/between' and instead resolved to adjust the margins instead */
 #dinner span {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* Coonect section to be seen on top right of nav by using float.  */
+/* Conect section to be seen on top right of nav by using float.  */
 #connect {
     float: right;
 }
 
-/* span class within #connect acts similar to the span on the opposite side of navbar. Used margin to make space between */
+/* Span class within #connect acts similar to the span on the opposite side of navbar. Used margin to make space between */
 #connect span {
 margin-left: 10px;
 margin-right: 10px;
