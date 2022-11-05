@@ -50,17 +50,18 @@ table {
 
 /* Reservation section */
 
+/* Japanese restaurant as image behind navbar and #dine-section. Image to be zoomed out in order to make image more appealing to viewers */
 #introduction {
     background-image: url(https://images.unsplash.com/photo-1576863514292-542ef379c13b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFwYW5lc2UlMjByZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+/* Reservation details at top of navbar with white text so that it can be seen in navbar */
 #rsvp {
   background-color: rgb(0,0,0,0.5);
   color: white;
-  justify-content: center;
-  align-items: center;
 }
 
 #dinner span {
@@ -86,14 +87,15 @@ margin-right: 10px;
 
 nav {
   background-color: rgb(0,0,0,0.5) ;
-  color: white;
+  justify-content: space-around;
 }
 
+/* Makes navbar contents white */
 div > ul > li > a {
   color:white !important;
 }
 
-
+/* Centers bowl of irce logo in the center vertically and horizontally in navbar section */
 #bowl {
   justify-content: center;
   display: flex;
