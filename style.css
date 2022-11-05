@@ -118,19 +118,12 @@ div > ul > li > a {
   padding: 4rem;
     
 }
-
+/* Maintaining background colour with white text in logo and restaurant name */
 #image {
   background-color: var(--bs-navbar-bg);
   color: var(--bs-navbar-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-#image i {
-justify-content: space-between !important;
-}
 
 /* "Dine in" text with white border around to welcome customers. This is placed in middle of background img */
 #dine {
