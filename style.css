@@ -49,6 +49,12 @@ table {
 	border-spacing: 0;
 }
 
+/* Root variables in cases where I need to adjust all elements at the same time. Removed and replaced elements that were not conneceted to this section by using var() instead  */
+
+:root {
+  --bs-navbar-bg: rgb(0,0,0,0.5);
+  --bs-navbar-text: white;
+}
 
 /* Reservation section (very top of page) */
 
@@ -62,8 +68,8 @@ table {
 
 /* Reservation details at top of navbar with white text so that it can be seen in navbar */
 #rsvp {
-  background-color: rgb(0,0,0,0.5);
-  color: white;
+  background-color: var(--bs-navbar-bg);
+  color: var(--bs-navbar-text);
 }
 
 /* Span class within #dinner to have space between each other to look more appealing. I could not somehow use justify-content to apply 'space-around/between' and instead resolved to adjust the margins instead */
@@ -81,25 +87,27 @@ table {
 #connect span {
 margin-left: 10px;
 margin-right: 10px;
+text-transform: uppercase;
 }
 
+/* Used @media to imitate real website to turn into a navbar with collapsable navbar dropdown when screen is smaller or zoomed in */
 @media only screen and (max-width: 1000px) {
     section > div {
       display: none;
     }
   }
 
-nav {
-  background-color: rgb(0,0,0,0.5) ;
-  justify-content: space-around;
+/* Keeping navbar background consistent with rest of nav section */
+  nav {
+  background-color: var(--bs-navbar-bg) ;
 }
 
-/* Makes navbar contents white */
+/* Makes navbar contents white (Home Food Drink Vouchers REservations_ */
 div > ul > li > a {
-  color:white !important;
+  color:var(--bs-navbar-text) !important;
 }
 
-/* Centers bowl of irce logo in the center vertically and horizontally in navbar section */
+/* Centers bowl of rice logo in the center vertically and horizontally in navbar section */
 #bowl {
   justify-content: center;
   display: flex;
@@ -108,13 +116,15 @@ div > ul > li > a {
     
 }
 
+/* "Dine in" text with white border around to welcome customers. This is placed in middle of background img */
 #dine {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  border:2px solid white;
-  width: 50%;
+  color: var(--bs-navbar-text);
+  border: 5px solid var(--bs-navbar-text);
+  width: 30%;
+  padding: 3rem;
 }
 
 #dine-section {
