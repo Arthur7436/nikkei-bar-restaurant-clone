@@ -1,3 +1,5 @@
+/* I inserted this as this is known to be code that allows developers to start with a clean slate in CSS (I learnt this from Udemy) */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,16 +66,18 @@ table {
   color: white;
 }
 
+/* span class within #dinner to have space between each other to look more appealing. I could not somehower use justify-content to apply 'space-around/between' and instead resolved to adjust the margins instead */
 #dinner span {
   margin-left: 10px;
   margin-right: 10px;
 }
 
+/* Coonect section to be seen on top right of nav by using float.  */
 #connect {
-    display: inline-flex;
     float: right;
 }
 
+/* span class within #connect acts similar to the span on the opposite side of navbar. Used margin to make space between */
 #connect span {
 margin-left: 10px;
 margin-right: 10px;
