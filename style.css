@@ -84,7 +84,14 @@ body {
 #dinner span {
   margin-left: 10px;
   margin-right: 10px;
+
 }
+
+.click {
+  text-decoration: none;
+  color: var(--bs-navbar-text);
+}
+
 
 /* Conect section to be seen on top right of nav by using float.  */
 #connect {
@@ -112,16 +119,18 @@ text-transform: uppercase;
   
 }
 
+/* Adding space below navbar menu */
 .navbar-menu {
   margin-bottom: 1.5rem;
   font-weight: 350;
+
 }
 
 /* Makes navbar contents white (Home Food Drink Vouchers Reservations). !important is used to override Bootstrap 5 imbedded code */
 div > ul > li > a {
   color:var(--bs-navbar-text) !important;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-size: 28px !important;
 }
 
