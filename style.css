@@ -149,7 +149,7 @@ div > ul > li > a {
   letter-spacing: 4px;
   display: inline !important;
 }
-
+/* Hover effect on navbar */
 div > ul > li > a:hover {
   border-bottom: 1px solid var(--bs-navbar-text);
 }
