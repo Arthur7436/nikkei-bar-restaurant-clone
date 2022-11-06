@@ -55,7 +55,7 @@ table {
 @import url();
 
 :root {
-  --bs-navbar-bg: rgb(0,0,0,0.5);
+  --bs-navbar-bg: rgb(0,0,0,0.4);
   --bs-navbar-text: white;
 }
 
@@ -108,7 +108,13 @@ text-transform: uppercase;
 
 /* Keeping navbar background consistent with rest of nav section */
   nav {
-  background-color: var(--bs-navbar-bg) ;
+  background-color: var(--bs-navbar-bg);
+  
+}
+
+.navbar-menu {
+  margin-bottom: 1.5rem;
+  font-weight: 350;
 }
 
 /* Makes navbar contents white (Home Food Drink Vouchers Reservations). !important is used to override Bootstrap 5 imbedded code */
