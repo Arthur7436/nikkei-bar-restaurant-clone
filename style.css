@@ -78,6 +78,7 @@ body {
   background-color: var(--bs-navbar-bg);
   color: var(--bs-navbar-text);
   padding: 1.7rem 0 ;
+  font-family: 'Montserrat', sans-serif;;
 }
 
 /* Span class within #dinner to have space between each other to look more appealing. I could not somehow use justify-content to apply 'space-around/between' and instead resolved to adjust the margins instead */
@@ -87,9 +88,16 @@ body {
 
 }
 
+/* links for reservation and social media section at top */
 .click {
   text-decoration: none;
   color: var(--bs-navbar-text);
+}
+
+/* Removes blue color when hovering */
+.click:hover {
+  text-decoration: none;
+  color:var(--bs-navbar-text)
 }
 
 
@@ -122,8 +130,8 @@ text-transform: uppercase;
 /* Adding space below navbar menu */
 .navbar-menu {
   margin-bottom: 1.5rem;
-  font-weight: 350;
-
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Makes navbar contents white (Home Food Drink Vouchers Reservations). !important is used to override Bootstrap 5 imbedded code */
@@ -131,7 +139,8 @@ div > ul > li > a {
   color:var(--bs-navbar-text) !important;
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 28px !important;
+  font-size: 23px !important;
+  letter-spacing: 4px;
 }
 
 /* Centers bowl of rice logo in the center vertically and horizontally in navbar section */
