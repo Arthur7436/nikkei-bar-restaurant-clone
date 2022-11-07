@@ -16,7 +16,7 @@ Here is the original <a href="https://nikkeibar.com.au/">website</a>.
 + VSCode
 
 ## Challenges I faced when building this project
-1. <b>Navbar hover movement:</b> Everytime I hovered over the main navbar section, the entire navbar along with the section with the main background image tends to move down slightly. To solve this, I looked into the dev tools on Google chrome and found out that the <code>a</code> tags within each navbar title had a display vlaue of 'block' due to Bootstrap 5 having .nav-link display as block. By changing the display to inline, the movement dissappeared everytime I hovered. 
+1. <b>Navbar hover movement:</b> Everytime I hovered over the main navbar section, the entire navbar along with the section with the main background image tends to move down slightly. To solve this, I looked into the dev tools on Google chrome and found out that the <code>a</code> tags within each navbar title had a <code>display value</code> of <code>block</code> due to Bootstrap 5 having <code>.nav-link</code> display as <code>block</code>. By changing the <code>display</code> to <code>inline</code>, the movement dissappeared everytime I hovered. 
 
 ## Improvements made on the original website
 1. 
