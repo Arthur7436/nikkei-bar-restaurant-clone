@@ -1,4 +1,4 @@
-# nikkei-bar-restaurant-clone
+# Nikkei bar restaurant clone
 Hello friend! Thank you for having a look at one of my pet projects!
 
 ## About
