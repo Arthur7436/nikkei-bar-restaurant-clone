@@ -5,48 +5,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Root variables in cases where I need to adjust all elements at the same time. Removed and replaced elements that were not conneceted to this section by using var() instead  */
@@ -55,7 +142,7 @@ table {
 @import url();
 
 :root {
-  --bs-navbar-bg: rgb(0,0,0,0.6);
+  --bs-navbar-bg: rgb(0, 0, 0, 0.6);
   --bs-navbar-text: aquamarine;
 }
 
@@ -67,11 +154,11 @@ body {
 
 /* Japanese restaurant as image behind navbar and #dine-section. Image to be zoomed out in order to make image more appealing to viewers */
 #introduction {
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    image-rendering: pixelated;   
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  image-rendering: pixelated;
 }
 
 
@@ -79,8 +166,9 @@ body {
 #rsvp {
   background-color: var(--bs-navbar-bg);
   color: var(--bs-navbar-text);
-  padding-top: 1.4rem ;
-  font-family: 'Montserrat', sans-serif;;
+  padding-top: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  ;
   font-size: 9px;
   font-weight: 1000;
 }
@@ -104,34 +192,34 @@ body {
 /* Removes blue color when hovering */
 .click:hover {
   text-decoration: none;
-  color:var(--bs-navbar-text)
+  color: var(--bs-navbar-text)
 }
 
 
 /* Conect section to be seen on top right of nav by using float.  */
 #connect {
-    float: right;
-    margin-right: 1rem;
+  float: right;
+  margin-right: 1rem;
 }
 
 /* Span class within #connect acts similar to the span on the opposite side of navbar. Used margin to make space between */
 #connect span {
-margin-left: 10px;
-margin-right: 10px;
-text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
 }
 
 /* Used @media to imitate real website to turn into a navbar with collapsable navbar dropdown when screen is smaller or zoomed in */
 @media only screen and (max-width: 800px) {
-    section > div {
-      display: none;
-    }
+  section>div {
+    display: none;
   }
+}
 
 /* Keeping navbar background consistent with rest of nav section */
-  nav {
+nav {
   background-color: var(--bs-navbar-bg);
-  
+
 }
 
 /* Adding space below navbar menu */
@@ -143,16 +231,17 @@ text-transform: uppercase;
 
 
 /* Makes navbar contents white (Home Food Drink Vouchers Reservations). !important is used to override Bootstrap 5 imbedded code */
-div > ul > li > a {
-  color:var(--bs-navbar-text) !important;
+div>ul>li>a {
+  color: var(--bs-navbar-text) !important;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 15px !important;
   letter-spacing: 4px;
   display: inline !important;
 }
+
 /* Hover effect on navbar */
-div > ul > li > a:hover {
+div>ul>li>a:hover {
   border-bottom: 1px solid var(--bs-navbar-text);
 }
 
@@ -162,21 +251,42 @@ div > ul > li > a:hover {
   display: flex;
   align-items: center;
   padding: 4rem;
-    
+
 }
+
 /* Maintaining background colour with white text in logo and restaurant name */
 #image {
   background-color: var(--bs-navbar-bg);
   color: var(--bs-navbar-text);
 }
 
-/* Dine text section */
-
-.nikkoi {
+/* Text on top of background image section */
+.nikkoi-container {
   margin-top: 10%;
   color: var(--bs-navbar-text) !important;
-  background-color: rgb(0,0,0,0.6);
+  background-color: rgb(0, 0, 0, 0.6);
 }
+
 
 /* MAIN SECTION */
 
+.about {
+  padding: 6rem;
+}
+
+main {
+
+}
+
+.nikkoi-title {
+
+}
+
+.about-paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font
+}
