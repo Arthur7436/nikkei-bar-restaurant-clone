@@ -70,6 +70,7 @@ body {
     background-image: url(https://images.unsplash.com/photo-1576863514292-542ef379c13b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFwYW5lc2UlMjByZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 
@@ -168,4 +169,8 @@ div > ul > li > a:hover {
   color: var(--bs-navbar-text);
 }
 
+/* Dine text section */
 
+.nikkoi {
+  height: ;
+}
