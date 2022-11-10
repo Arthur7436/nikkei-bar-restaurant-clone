@@ -211,7 +211,7 @@ body {
 
 /* Used @media to imitate real website to turn into a navbar with collapsable navbar dropdown when screen is smaller or zoomed in */
 @media only screen and (max-width: 800px) {
-  section>div {
+  section > div {
     display: none;
   }
 }
@@ -219,7 +219,6 @@ body {
 /* Keeping navbar background consistent with rest of nav section */
 nav {
   background-color: var(--bs-navbar-bg);
-
 }
 
 /* Adding space below navbar menu */
@@ -303,4 +302,10 @@ blockquote {
 .image-div:hover img {
   transform: scale(1.25,1.25);
   cursor: pointer;
+}
+
+/* FORM section */
+#form {
+  background-color: rgb(25, 24, 24) !important;
+  color: white;
 }
