@@ -287,11 +287,13 @@ main {
   margin-bottom: 20px;
 }
 
-blockquote {
+/* blockquote {
   font
-}
+} */
 
 /* Photo section */
 
-.bottom-images {
+.bottom-images:hover {
+  transform: scale(1.5,1.5);
+  cursor: pointer;
 }
