@@ -67,10 +67,11 @@ body {
 
 /* Japanese restaurant as image behind navbar and #dine-section. Image to be zoomed out in order to make image more appealing to viewers */
 #introduction {
-    background-image: url(https://images.unsplash.com/photo-1576863514292-542ef379c13b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFwYW5lc2UlMjByZXN0YXVyYW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    image-rendering: pixelated;   
 }
 
 
@@ -171,6 +172,6 @@ div > ul > li > a:hover {
 
 /* Dine text section */
 
-.nikkoi {
-  height: ;
+.nikkoi-text {
+  margin-top: 30% ;
 }
