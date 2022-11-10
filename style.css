@@ -60,7 +60,7 @@ table {
 }
 
 body {
-
+  font-family: sans-serif;
 }
 
 /* Reservation section (very top of page) */
@@ -143,8 +143,8 @@ text-transform: uppercase;
 /* Makes navbar contents white (Home Food Drink Vouchers Reservations). !important is used to override Bootstrap 5 imbedded code */
 div > ul > li > a {
   color:var(--bs-navbar-text) !important;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 15px !important;
   letter-spacing: 4px;
   display: inline !important;
@@ -178,6 +178,7 @@ div > ul > li > a:hover {
   border: 5px solid var(--bs-navbar-text);
   width: 30%;
   padding: 3rem;
+  letter-spacing: 10px;
 }
 /* Aligns h1 inside to be at center of page */
 #dine-section {
