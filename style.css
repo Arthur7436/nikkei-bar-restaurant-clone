@@ -55,8 +55,8 @@ table {
 @import url();
 
 :root {
-  --bs-navbar-bg: rgb(0,0,0,0.4);
-  --bs-navbar-text: white;
+  --bs-navbar-bg: rgb(0,0,0,0.6);
+  --bs-navbar-text: aquamarine;
 }
 
 body {
@@ -174,6 +174,9 @@ div > ul > li > a:hover {
 
 .nikkoi {
   margin-top: 10%;
-  color: aquamarine !important;
-  background-color: rgb(0,0,0,0.4);
+  color: var(--bs-navbar-text) !important;
+  background-color: rgb(0,0,0,0.6);
 }
+
+/* MAIN SECTION */
+
