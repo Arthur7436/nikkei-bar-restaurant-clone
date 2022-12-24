@@ -309,3 +309,13 @@ blockquote {
   background-color: rgb(25, 24, 24) !important;
   color: white;
 }
+
+.form-section {
+  padding: 6rem;
+}
+
+.submit-button {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
